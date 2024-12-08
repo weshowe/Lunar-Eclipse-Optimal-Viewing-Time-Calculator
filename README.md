@@ -5,7 +5,9 @@ A script to calculate the optimal viewing time for a lunar eclipse (down to the 
 Clone the repo to a folder of your choice and install the ephem library (does the astronomy calculations) by typing "pip install ephem" in the command line.
 
 ## Usage
-This script functions by going through every second of the day you choose and showing the exact time when the Sun and Moon are closest to each other. If there is an eclipse that day, they will be very close indeed. It will also print some stats about that point in time, including the angle of separation between them (in degrees), their sizes in the sky (in arcseconds), and an estimate of what percentage of the Sun is covered by the Moon.
+This script functions by going through every second of the day you choose and showing the exact time when the Sun and Moon are closest to each other. If there is an eclipse that day, they will be very close indeed. 
+
+It will also print some stats about that point in time, including the angle of separation between them (in degrees), their sizes in the sky (in arcseconds), and an estimate of what percentage of the Sun is covered by the Moon.
 
 The script requires the latitude and longitude of your observation point (you can get this from Google Maps), the time zone at the observation point (specified as a UTC offset), and the date the eclipse is supposed to happen (in the observation point's local time).
 
@@ -15,7 +17,7 @@ For example, let's say I'm sitting by the Eiffel Tower at 48.857921, 2.295497. I
 
 If no UTC offset is specified, the script will use UTC time.
 
-Lastly, the program uses Monte Carlo sampling to estimate what percentage of the Sun is covered by the Moon. This requires a large number of sampling points. By default it creates 10 million sampling points, but if you want to fine tune it, you can use the --nsamples argument with your chosen number of sampling points. To not perform the estimate, use --nsamples 0
+Lastly, the program uses Monte Carlo sampling to estimate what percentage of the Sun is covered by the Moon. This requires a large number of sampling points for an accurate estimate. By default it creates 10 million sampling points, but if you want to fine tune it, you can use the --nsamples argument with your chosen number of sampling points. To not perform the estimate, use --nsamples 0
 
 ## "But Wes, why would I use your lame script when there are so many cool web apps made by people much smarter than you?"
 I wasn't able to find one that calculated the ideal observation time down to the second, which I wanted to know for the April 2024 eclipse because I am a huge nerd. This was also fun to make.
