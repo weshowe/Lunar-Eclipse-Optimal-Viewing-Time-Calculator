@@ -21,3 +21,6 @@ Lastly, the program uses Monte Carlo sampling to estimate what percentage of the
 
 ## "But Wes, why would I use your lame script when there are so many cool web apps made by people much smarter than you?"
 I wasn't able to find one that calculated the ideal observation time down to the second, which I wanted to know for the April 2024 eclipse because I am a huge nerd. This was also fun to make.
+
+## And Remember...
+If you're going to look at an eclipse, make sure to use ISO 12312-2 approved eclipse glasses or solar binoculars from a trustworthy merchant, or you will be singing [this song](https://www.youtube.com/watch?v=ys8-HwC77oU) for the rest of your days.
